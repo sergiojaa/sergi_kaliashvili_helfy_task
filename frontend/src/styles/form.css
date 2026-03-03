@@ -1,0 +1,61 @@
+.task-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    margin-bottom: 24px;
+}
+
+.task-form-title {
+    margin: 0 0 16px;
+    font-size: 22px;
+}
+
+.task-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.task-form-group input,
+.task-form-group textarea,
+.task-form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d7dce5;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.task-form-group textarea {
+    resize: vertical;
+}
+
+.task-form-error {
+    margin: 0 0 12px;
+    color: #c62828;
+    font-size: 14px;
+}
+
+.task-form-button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.task-form-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.task-form-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.task-form-cancel-button {
+    background: #e5e7eb;
+}

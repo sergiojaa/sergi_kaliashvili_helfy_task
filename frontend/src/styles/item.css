@@ -1,0 +1,18 @@
+.task-item-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.task-item-button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.task-item-button-danger {
+    background: #c62828;
+    color: #ffffff;
+}

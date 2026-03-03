@@ -1,0 +1,46 @@
+.task-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.task-carousel-track {
+    display: flex;
+    width: max-content;
+    gap: 16px;
+}
+
+.task-carousel-track-animated {
+    animation: scrollTasks 24s linear infinite;
+}
+
+.task-carousel-slide {
+    flex: 0 0 320px;
+    width: 320px;
+}
+
+.task-list-empty {
+    margin: 0;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes scrollTasks {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 8px));
+    }
+}
+
+@media (max-width: 768px) {
+    .task-carousel-slide {
+        flex: 0 0 280px;
+        width: 280px;
+    }
+}
